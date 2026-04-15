@@ -1,0 +1,20 @@
+algoritmo "Filtro_Candidato_Tecnologia"
+
+var
+   idade, projetos: inteiro
+
+inicio
+   escreval("=== Filtro de Candidato em Tecnologia ===")
+   escreva("Informe sua idade: ")
+   leia(idade)
+
+   escreva("Informe quantos projetos você tem no GitHub: ")
+   leia(projetos)
+
+   se (idade > 18) e (projetos >= 5) entao
+      escreval("Parabéns! Você foi aprovado para a entrevista.")
+   senao
+      escreval("Infelizmente, você não atende aos requisitos para a entrevista.")
+   fimse
+
+fimalgoritmo

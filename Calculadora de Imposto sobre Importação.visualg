@@ -1,0 +1,22 @@
+algoritmo "Imposto_Importacao"
+
+
+var
+   valorProduto, imposto: real
+
+inicio
+   escreval("=== Calculadora de Imposto sobre Importação ===")
+   escreva("Informe o valor do produto em dólares: ")
+   leia(valorProduto)
+
+   se (valorProduto > 50) entao
+      imposto <- valorProduto * 0.60
+      escreval("Taxação de 60% aplicada.")
+   senao
+      imposto <- valorProduto * 0.17
+      escreval("ICMS de 17% aplicado.")
+   fimse
+
+   escreval("Valor do imposto: US$ ", imposto:0:2)
+
+fimalgoritmo

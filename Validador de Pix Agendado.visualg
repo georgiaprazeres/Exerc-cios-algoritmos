@@ -1,0 +1,27 @@
+algoritmo "Validador_Pix_Agendado"
+
+var
+   valorPix, saldo, chequeEspecial: real
+
+inicio
+   escreval("=== Validador de Pix Agendado ===")
+   escreva("Informe o valor da transferência: R$ ")
+   leia(valorPix)
+
+   escreva("Informe o saldo atual: R$ ")
+   leia(saldo)
+
+   se (saldo >= valorPix) entao
+      escreval("Transação realizada.")
+   senao
+      escreva("Informe o limite de cheque especial: R$ ")
+      leia(chequeEspecial)
+
+      se (saldo + chequeEspecial >= valorPix) entao
+         escreval("Transação via Cheque Especial.")
+      senao
+         escreval("Saldo Insuficiente.")
+      fimse
+   fimse
+
+fimalgoritmo

@@ -1,0 +1,18 @@
+algoritmo "Viagem_Copa2026"
+
+var
+   valorAcumulado, falta: real
+
+inicio
+   escreval("=== Viagem para a Copa do Mundo 2026 ===")
+   escreva("Qual o valor acumulado em conta? R$ ")
+   leia(valorAcumulado)
+
+   se (valorAcumulado >= 25000) entao
+      escreval("Partiu ver o hexa!")
+   senao
+      falta <- 25000 - valorAcumulado
+      escreval("Ainda falta R$ ", falta:0:2, " para atingir a meta :(")
+   fimse
+
+fimalgoritmo

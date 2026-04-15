@@ -1,0 +1,26 @@
+algoritmo "Sistema_Cashback_Progressivo"
+
+var
+   valorCompra, cashback: real
+
+inicio
+   escreval("=== Sistema de Cashback Progressivo ===")
+   escreva("Informe o valor da compra: R$ ")
+   leia(valorCompra)
+
+   se (valorCompra > 500) entao
+      cashback <- valorCompra * 0.10
+      escreval("Você recebeu 10% de cashback.")
+   senao
+      se (valorCompra >= 200) e (valorCompra <= 500) entao
+         cashback <- valorCompra * 0.05
+         escreval("Você recebeu 5% de cashback.")
+      senao
+         cashback <- 0
+         escreval("Sem cashback para compras abaixo de R$ 200.")
+      fimse
+   fimse
+
+   escreval("Valor do benefício: R$ ", cashback:0:2)
+
+fimalgoritmo
