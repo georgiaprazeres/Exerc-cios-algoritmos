@@ -1,1 +1,1 @@
-# Exerc-cios-algoritmos
+# Exercios-algoritmos
